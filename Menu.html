@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../TestHTML/testFade.css">
+    <script src="../TestHTML/testscrip.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <div class="container bg">
+        <div class="navBar">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-suitcase-rolling"></i>
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutMe.html">About me</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+            </ul>
+        </div>
+    </div>
+    <center>
+        <h1 style="color: rgb(255, 255, 255)">&nbsp;ALL Menu Picture</h1>
+        <h1 style="color: rgb(255, 255, 255)">ขนมทานเล่น</h1>
+    </center>
+    <div class="multiple-items">
+        <div class="items">
+            <img src="ทาร์ดไข่ออริจินอล.jpg" alt="">
+        </div>
+        <div class="items">
+            <img src="ทาร์ดไข่ช็อคโกแลต.jpg" alt="">
+        </div>
+        <div class="items">
+            <img src="ทาร์ดไข่ชาเขียว.jpg" alt="">
+        </div>
+        <div class="items">
+            <img src="ทาร์ดไข่ปอยรสส้ม.jpg" alt="">
+        </div>
+        <div class="items">
+            <img src="โดนัทช็อคโกแลต.jpg" alt="">
+        </div>
+        <div class="items">
+            <img src="โดนัทช็อคโกแลต-ถั่ว.jpg" alt="">
+        </div>
+        <div class="items">
+            <img src="โดนัทถั่ว.jpg" alt="">
+        </div>
+    </div>
+    <center>
+        <h1 style="color: rgb(255, 255, 255)">About Me</h1>
+    </center>
+    <div class="multiple-items">
+        <div class="items">
+            <img src="กาแฟ.jpg" alt="">
+        </div>
+        <div class="items">
+            <img src="ชามะนาว.jpg" alt="">
+        </div>
+        <div class="items">
+            <img src="ชาเขียว.jpg" alt="">
+        </div>
+        <div class="items">
+            <img src="ชาเขียวมะนาว.jpg" alt="">
+        </div>
+        <div class="items">
+            <img src="ชาเย็น.jpg" alt="">
+        </div>
+        <div class="items">
+            <img src="น้ำมะนาว.jpg" alt="">
+        </div>
+        <div class="items">
+            <img src="สตอเบอรี่นมสดปั่น.jpg" alt="">
+        </div>
+        <div class="items">
+            <img src="โกโก้.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        $(document).ready(() => {
+            $('.multiple-items').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+            });
+            $(".multiple-items .slick-prev").html('<i class="fas fa-arrow-circle-left"></i>');
+            $(".multiple-items .slick-next").html('<i class="fas fa-arrow-circle-right"></i>');
+            $(".multiple-items .slick-dots li").html('');
+        });
+    </script>
+</body>
+</html>
+
+
+
